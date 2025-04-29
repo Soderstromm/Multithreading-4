@@ -25,7 +25,7 @@ public class PhoneBook {
     }
 
     public Iterable<String> printAllNames() {
-        return null;
+        return names;
     }
 
 }
