@@ -15,4 +15,10 @@ public class PhoneBook {
         numberToName.put(number, name);
         return names.size();
     }
+
+    public String findByNumber(String number) {
+        return null;
+    }
+
+
 }
