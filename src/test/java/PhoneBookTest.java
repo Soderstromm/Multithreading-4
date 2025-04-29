@@ -31,4 +31,15 @@ public class PhoneBookTest {
         phoneBook.add("Петя", "+79991234567");
         assertEquals("+79991234567", phoneBook.findByName("Петя"));
     }
+
+    @Test
+    public void testPrintAllNames(){
+        PhoneBook phoneBook = new PhoneBook();
+        phoneBook.add("Петя", "+79991234567");
+        phoneBook.add("Паша", "+79001234567");
+        phoneBook.add("Аня", "+79819004900");
+
+        Iterable<String> allNames = phoneBook.printAllNames();
+        assertEquals("Аня", allNames.iterator().next());
+    }
 }

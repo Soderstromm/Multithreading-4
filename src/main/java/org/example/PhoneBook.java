@@ -24,4 +24,8 @@ public class PhoneBook {
         return nameToNumber.get(name);
     }
 
+    public Iterable<String> printAllNames() {
+        return null;
+    }
+
 }
